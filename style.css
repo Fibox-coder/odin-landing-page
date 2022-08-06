@@ -5,7 +5,6 @@
 body{
     font-family: Roboto, Arial;
     margin: 0;
-    height: 2000px;
     margin-top: 70px;
 }
 
@@ -37,6 +36,7 @@ li{
     padding: 10px;
     border-radius: 3px;
     transition: background-color 0.3s;
+    cursor: pointer;
 }
 
 li:hover{
@@ -58,20 +58,21 @@ li:hover{
     max-width: 400px;
 }
 
-h2{
+.left-side h2{
     font-size: 40px;
     margin: 0px;
+    text-align: left;
 }
 
 .sign-up-button{
     background-color: #3882F6;
     color: #F0FAF8;
     border: none;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 600;
-    padding: 5px 20px;
+    padding: 8px 25px;
     border-radius: 10px;
-
+    cursor: pointer;
 }
 
 .main-image{
@@ -79,4 +80,104 @@ h2{
     width: 500px;
     object-fit: cover;
     border-radius: 5px;
+}
+
+h2{
+    text-align: center;
+    margin: 50px;
+    font-size: 40px;
+}
+
+.flex-all-icons{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.icons-text-container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 150px;
+}
+
+.icon{
+    width: 150px;
+    height: 150px;
+}
+
+.quote-section{
+    background-color: #E5E7EB;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0 80px 0;
+}
+
+h4{
+max-width: 600px;
+font-size: 24px;
+font-weight: 300;
+font-style: italic;
+}
+
+h5{
+text-align: right;
+font-size: 22px;
+font-weight: 400;
+}
+
+.call-to-action{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3882F6;
+    max-width: 800px;
+    height: 100px;
+    border-radius: 4px;
+    color: #F0FAF8;
+    gap: 100px;
+    padding: 10px;
+    margin: auto;
+    margin-bottom: 80px;
+}
+
+.container-text{
+    max-width: 500px;
+}
+
+h6{
+    font-size: 20px;
+    margin: 0;
+}
+
+.container-text p{
+    margin: 5px;
+    font-size: 14px;
+}
+
+.call-to-action button{
+    border: 2px solid white;
+    background-color: #3882F6;
+    color: #F0FAF8;
+    border-radius: 4px;
+    padding: 5px 20px;
+    cursor: pointer;
+}
+
+.call-to-action button:hover, .sign-up-button:hover{
+    background-color: white;
+    color: #3882F6;
+}
+
+footer{
+        background-color: #1F2937;
+        height: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        color: #F0FAF8;
+        font-size: 14px;
 }
